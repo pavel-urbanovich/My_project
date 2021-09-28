@@ -236,7 +236,7 @@ h1 {
    background-color: white;
 }
 
-h2 {
+.virtual_tour_title {
     font-family: 'Forum';
     font-size: 80px;
     font-weight: normal;
@@ -348,6 +348,14 @@ h2 {
     padding-bottom: 25px;
 }
 .section_title {
+    font-family: 'Forum';
+    font-size: 80px;
+    font-weight: normal;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding-top: 75px;
+    padding-bottom: 25px;
     color:#FFFFFF;
 
 }
@@ -393,4 +401,55 @@ h2 {
 }
 .color_text {
     color: #CAAA7D;
+}
+/* Start section journey*/
+.description_journey {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 38px;
+    color: #000000;
+    padding-bottom: 25px;
+    width: 720px;
+    padding: 75px 0 75px 0;
+}
+
+.journey_title_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.title_info_journey {
+    font-family: 'Forum';
+    font-size: 80px;
+    font-weight: normal;
+    color: #9D8665;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    
+}
+.video_poster {
+    background-image: url(assets/img/video_player.png);
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 650px;
+}
+
+
+
+
+
+
+
+/* Start section Art gallery*/
+/*.art_gallery {
+    width: 1920px;
+    height: 2200px;
+    background-color: #030303;
+}
+.gallery_title {
+    color: #FFFFFF;
+    padding-bottom: 75px;
 }
