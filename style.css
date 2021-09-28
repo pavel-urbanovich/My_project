@@ -303,7 +303,7 @@ h1 {
     line-height: 35px;
     letter-spacing: 5px;
     text-transform: uppercase;
-    padding-bottom: 10px;
+    padding: 25px 0 10px 0;
 }
 .line {
     border-top: 2px solid #710707;
@@ -435,6 +435,26 @@ h1 {
     background-repeat: no-repeat;
     width: 1440px;
     height: 650px;
+    position: relative;
+}
+.video_round {
+    background-image: url(assets/img/round.png);
+    background-repeat: no-repeat;
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    left: 610px;
+    bottom: 215px;
+}
+.triangle {
+    background-image: url(assets/img/play.png);
+    background-repeat: no-repeat;
+    width: 91.42619323730469px;
+    height: 120.17610168457031px;
+    position: absolute;
+    left: 686.53px;
+    bottom: 264.91px;
+    
 }
 
 
