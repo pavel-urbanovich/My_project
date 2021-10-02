@@ -6,6 +6,8 @@
     }
 html {
     width: 1920px;
+    scroll-behavior: smooth;
+      
 }
 
 
@@ -309,6 +311,11 @@ h1 {
     text-transform: uppercase;
     padding: 25px 0 10px 0;
 }
+p a {
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+}
 .line {
     border-top: 2px solid #710707;
     width: 300px;
@@ -576,6 +583,7 @@ h1 {
 
 video {
     display: block;
+    cursor: pointer;
 }
 
 .video_title {
@@ -635,6 +643,12 @@ video {
     width: 12px;
     height: 12px;
     padding-right: 20px;
+    cursor: pointer;
+}
+.black_point:hover {
+    background-image: url(assets/svg/red_point.svg);
+    background-repeat: no-repeat;
+    
 }
 .point {
     background-image: url(assets/svg/point_grey.svg);
@@ -650,8 +664,12 @@ video {
     width: 10px;
     height: 12px;
     transform: rotate(180deg);
-    
-
+}
+.vector_2:hover {
+    background-image: url(assets/img/red_stroke.png);
+    background-repeat: no-repeat;
+    transform: rotate(360deg);
+ 
 }
 /* Start section Art gallery*/
 /*.art_gallery {
