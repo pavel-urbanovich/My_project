@@ -28,6 +28,7 @@ html {
 .logo_item:hover {
     opacity: 1;
     cursor: pointer;
+    transition: .3s;
 }
 
 .header_container {
@@ -50,13 +51,13 @@ html {
     font-family: 'Forum';
     letter-spacing: 5px;
     font-weight: 400;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .logo_name:hover {
-    text-decoration: underline;
     opacity: 1;
     cursor: pointer;
+    transition: .3s;
 }
 
 .navigation {
@@ -77,16 +78,17 @@ ul li a {
     font-size: 22px;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 2px;
-    opacity: 0.5;
+    opacity: 1;
     font-weight: 200;
 }
 ul li a:hover {
-    opacity: 1;
+    opacity: .6;
     color: #9D8665;
+    transition: .3s;
     
 }
 ul li a:active {
-    opacity: 1;
+    opacity: 0.7;
     color: #7E6C51;
        
 }
@@ -107,16 +109,17 @@ ul li a:active {
 h1 {
     font-family: 'Forum';
     font-size: 80px;
-    font-weight: normal;
     color: #FFFFFF;
+    font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 5px;
     line-height: 90px;
     position: absolute;
     width: 593px;
     top: 300px;
+    
 }
-
+ 
 .title_description {
     font-family: 'Roboto';
     color: #FFFFFF;
@@ -146,6 +149,7 @@ h1 {
 }
 .welcome_button:hover {
     background: #9D8665;
+    transition: .3s;
 
 }
 
@@ -430,13 +434,13 @@ h1 {
     padding-bottom: 75px;
     
 }
-.video_poster {
+/* .video_poster {
     background-image: url(assets/img/video_player.png);
     background-repeat: no-repeat;
     width: 1440px;
     height: 650px;
     position: relative;
-}
+} */
 .video_round {
     background-image: url(assets/img/round.png);
     background-repeat: no-repeat;
@@ -461,6 +465,7 @@ h1 {
     width: 1440px;
     height: 85px;
     position: relative;
+    
 }
 .little_play{
     background-image: url(assets/img/little_play.png);
@@ -468,19 +473,17 @@ h1 {
     position: absolute;
     width: 23px;
     height: 31px;
-    position: absolute;
     left: 30px;
     top: 27px;
     }
 .red_line {
     background-image: url(assets/img/red_line.png);
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     position: absolute;
     width: 929px;
-    height: 15px;
-    position: absolute;
+    height: 8px;
     left: 103px;
-    top: 35px;
+    top: 39px;
 }
 .poin_line {
     background-image: url(assets/img/point.png);
@@ -488,27 +491,168 @@ h1 {
     position: absolute;
     width: 15px;
     height: 15px;
-    position: absolute;
     left: 594px;
     top: 35px;
     z-index: 1;
 }
 .white_play {
     background-image: url(assets/img/white_line.png);
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     position: absolute;
     width: 432px;
     height: 8px;
-    position: absolute;
     right: 408px;
+    top: 39px;
+}
+.volume {
+    position: relative;
+    width: 1440px;
+}
+.volume_spiker {
+    background-image: url(assets/img/volume_1.png);
+    background-repeat: no-repeat;
+    width: 21.11px;
+    height: 31px;
+    position: absolute;
+    right: 336.89px;
+    top: 27px;
+}
+.volume_item {
+    background-image: url(assets/img/volume_2.png);
+    background-repeat: no-repeat;
+    width: 6.38px;
+    height: 12.39px;
+    position: absolute;
+    right: 327.39px;
+    top: 36.37px;
+}
+.volume_item_list {
+    background-image: url(assets/img/volume_3.png);
+    background-repeat: no-repeat;
+    width: 10.56px;
+    height: 24.8px;
+    position: absolute;
+    right: 320px;
+    top: 30.1px;
+}
+.little_line {
+    position: relative;
+    width: 1440px;
+}
+.litle_red_line {
+    background-image: url(assets/img/red_little_line.png);
+    background-repeat: no-repeat;
+    width: 67px;
+    height: 8px;
+    position: absolute;
+    right: 203px;
+    top: 39px;
+}
+.poin_line_little {
+    background-image: url(assets/img/point.png);
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 195px;
     top: 35px;
+    z-index: 1;
+}
+.white_play_little {
+    background-image: url(assets/img/white_little_line.png);
+    background-repeat: no-repeat;
+    width: 88px;
+    height: 8px;
+    position: absolute;
+    right: 115px;
+    top: 39px;
+}
+.small_videos {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+  
+}
+
+video {
+    display: block;
+}
+
+.video_title {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    padding: 15px 0 0 10px;
+}
+
+.video_logo {
+    background-image: url(assets/svg/mona.svg);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    
+}
+
+.points {
+    background-image: url(assets/svg/Group\ 18.svg);
+    background-repeat: no-repeat;
+    width: 4px;
+    height: 16px;
     
 }
 
 
+.video_description {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 38px;
+    color: #FFFFFF;
+    padding: 0 23px 0 10px;
+    
+}
 
+.video_slider {
+    display: flex;
+    padding-top: 40px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    
 
+}
+.vector_1 {
+    background-image: url(assets/img/stroke2.png);
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 12px;
+    padding-right: 20px;
+}
+.black_point {
+    background-image: url(assets/svg/video_point_black.svg);
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;
+    padding-right: 20px;
+}
+.point {
+    background-image: url(assets/svg/point_grey.svg);
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;
+    padding-right: 20px;
+}
 
+.vector_2 {
+    background-image: url(assets/img/stroke2.png);
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 12px;
+    transform: rotate(180deg);
+    
+
+}
 /* Start section Art gallery*/
 /*.art_gallery {
     width: 1920px;
