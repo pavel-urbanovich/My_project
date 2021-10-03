@@ -796,6 +796,32 @@ video {
     position: absolute;
     bottom: 0px;
 }
-/* .gallery_image4, .gallery_image8, .gallery_image12 {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%); */
-/* } */
+/*Start section Tickets and Contacs*/
+
+.title_tickets {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #9D8665;
+    padding: 75px 0 25px 0;
+   
+    
+}
+.tickets_wrapper {
+    border-top: 3px solid #710707;
+    display: flex;
+    padding-top: 75px;
+}
+.tickets_image {
+    background-image: url(assets/img/tickets_img.png);
+    background-repeat: no-repeat;
+    width: 720px;
+    height: 550px;
+}
+.tickets_description {
+    display: flex;
+}
