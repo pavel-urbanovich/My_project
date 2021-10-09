@@ -591,6 +591,7 @@ video {
     position: absolute;
     align-items: center;
     padding: 15px 0 0 10px;
+    width: 100%;
 }
 
 .video_logo {
@@ -815,13 +816,193 @@ video {
     border-top: 3px solid #710707;
     display: flex;
     padding-top: 75px;
+    justify-content: space-between;
 }
 .tickets_image {
     background-image: url(assets/img/tickets_img.png);
     background-repeat: no-repeat;
-    width: 720px;
+    max-width: 720px;
     height: 550px;
+    width: 100%;
 }
 .tickets_description {
     display: flex;
+}
+.ticket_type_title, .ticket_type_title_amount {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+    padding-bottom: 50px;
+    
+    
+}
+.tickets_type {
+padding-left: 60px;
+width: 100%;
+padding-right: 240px;
+}
+
+.ticket_label {
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+    color: #000000;
+    display: block;
+    position: relative;
+    text-indent: 40px;
+    padding-bottom: 25px;   
+    width: 270px;
+    }
+
+.ticket_label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background-color:#FFFFFF;
+    border-radius: 50%;
+    border: 2px solid #000000;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .ticket_label:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .ticket_label input:checked ~ .checkmark {
+    background-color: #FFFFFF;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .ticket_label input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .ticket_label .checkmark:after {
+       top: 3px;
+      left: 3px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background:#000000;
+  }
+
+.number_button {
+    all: unset;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+    padding-left: 12px;
+	text-align: center;
+	display: block;
+    width: 100%;
+    
+}
+
+.tickets_amount {
+    width: 150px;
+    position: sticky;
+}  
+.ticket_type_title_amount {
+    text-align: right;
+    padding-bottom: 25px;
+}
+.basic_name {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    padding-bottom: 15px;
+}
+.buttons_select {
+    border: 3px solid #000000;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.button_item_1, .button_item_2 {
+    background: none;
+    border: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    padding: 0;
+    cursor: pointer;
+    
+}
+.button_item_1 {
+margin-left: 14px;
+}
+.button_item_2 {
+    margin-right: 14px;
+}
+.total {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 1.65px;
+    color: #000000;
+    margin: 50px 0 60px 0;
+}
+.tickets_button {
+    background: #000000;
+    border: none;
+    border-radius: 2px;
+    width: 175px;
+    height: 50px;
+    color: #FFFFFF;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 2px;
+    position: absolute;
+    left: -25px;
+    cursor: pointer;
+}
+.tickets_button:hover {
+    background: #9D8665;
+    color: #000000;
+    transition: all .3s;
+
 }

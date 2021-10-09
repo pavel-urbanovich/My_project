@@ -231,18 +231,36 @@
                         <div class="tickets_image"></div>
                         <div class="tickets_description">
                             <div class="tickets_type">
-                                <p>Ticket Type</p>
-                                <p><input name="name" type="radio" value="Permanent exhibition">Permanent exhibition</p>
-                                <p><input name="name" type="radio" value="Temporary exhibition">Temporary exhibition</p>
-                                <p><input name="name" type="radio" value="Combined Admission">Combined Admission</p>
+                                <p class="ticket_type_title">Ticket Type</p>
+                               <label class="ticket_label"> 
+                                <input name="name" type="radio" checked="checked" value="Permanent exhibition">Permanent exhibition
+                                <span class="checkmark"></span>
+                                </label>
+                                <label class="ticket_label">
+                                    <input name="name" type="radio" value="Temporary exhibition">Temporary exhibition
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="ticket_label">
+                                    <input name="name" type="radio" value="Combined Admission">Combined Admission
+                                    <span class="checkmark"></span>
+                                </label>
                             </div>
                             <div class="tickets_amount">
-                                <label for="#">Basic 18+</label>
-                                <input type="number" id="tentacles" name="tentacles">
-                                <label for="#">Senior 65+</label>
-                                <input type="number" id="tentacles" name="tentacles">
-                                <p>Total €<span>220</span></p>
-                                <form action="#" target="_blank"><button class="tickets_button">Buy Now</button></form>
+                                <p class="ticket_type_title_amount">Amount</p>
+                                <p class="basic_name">Basic 18+</p>
+                                <div class="buttons_select">
+                                    <button class="button_item_1" type="button" onclick="this.nextElementSibling.stepDown()">–</button>
+                                    <input type="number" min="0" max="10" value="1" readonly class="number_button">
+                                    <button class="button_item_2" type="button" onclick="this.previousElementSibling.stepUp()">+</button> 
+                                </div>
+                                <p class="basic_name">Senior 65+</p>
+                                <div class="buttons_select">
+                                    <button class="button_item_1" type="button" onclick="this.nextElementSibling.stepDown()">–</button>
+                                    <input type="number" min="0" max="10" value="1" readonly class="number_button">
+                                    <button class="button_item_2" type="button" onclick="this.previousElementSibling.stepUp()">+</button> 
+                                </div>
+                                <p class="total">Total €<span class="total">220</span></p>
+                                <button class="tickets_button">Buy Now</button>
                             </div>
                         </div>
                     </div>
