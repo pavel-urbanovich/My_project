@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+   
 </head>
 <body>
     <header class="header">
@@ -224,7 +225,7 @@
                     <div class="gradient"></div>
                 </div>
             </section>
-            <section class="tickets" id="contacts"> 
+            <section class="tickets"> 
                 <div class="container">
                     <h2 class="title_tickets">BUY TICKETS</h2>
                     <div class="tickets_wrapper">
@@ -265,18 +266,81 @@
                         </div>
                     </div>
                 </div>
-                <div class="panoram_image"></div>
-                <div class="container">
-                    <h2 class="contacks">Contacts</h2>
-                    <div class="contacks_info">
-                        <p class="contacs_tile">Palais Royal Musee du Louvre</p>
-                        <p class="info">address: 75001 Paris, France</p>
-                        <p class="info">phone: +33(0) 1 40 20 50 50</p>
-                        <p class="info">mail: info@louvre.fr</p>
+                <div class="form_wrapper">
+                    <div class="wrapper_description">
+                        <div class="form_item">
+                            <svg class="logo_booking"></svg>
+                            <h3 class="booking">Booking tickets</h3>
+                            <p class="subtitle">Tour to Louvre</p>
+                            <form class="form"  action="" method="post" name="name_" target="_blank">
+                                <div class="form_datetime">
+                                    <input type="date" value="Date">
+                                    <input type="time">
+                                </div>
+                                <input type="text" class="name_input">
+                                <input type="email" class="email_input">
+                                <input type="tel" class="tel_input">
+                                <span class="select_background"></span> <span class="select_text">Ticket Type</span>
+                                <select name="select" class="select">
+                                   <option value="#" class="select_item"></option>
+                                </select>
+                                <div class="entry_container">
+                                    <div class="title_entry">Entry ticket</div>
+                                    <div class="wrapper_entry">
+                                        <div class="description_entry">
+                                            <div class="basic_1">Basic 18+ (20 €)</div>
+                                            <div class="basic">Senior 65+ (10 €)</div>
+                                        </div>
+                                        <div class="buttons-entry">
+                                            <div class="buttons_entry_form">
+                                                <button class="button_entry_1" type="button" onclick="this.nextElementSibling.stepDown()">–</button>
+                                                <input type="number" min="0" max="10" value="1" readonly class="entry_button">
+                                                <button class="button_entry_2" type="button" onclick="this.previousElementSibling.stepUp()">+</button> 
+                                            </div>
+                                            <div class="buttons_entry_form">
+                                                <button class="button_entry_1" type="button" onclick="this.nextElementSibling.stepDown()">–</button>
+                                                <input type="number" min="0" max="10" value="1" readonly class="entry_button">
+                                                <button class="button_entry_2" type="button" onclick="this.previousElementSibling.stepUp()">+</button> 
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                </div>
+                                <div class="overviev">
+                                    <div class="overviev_container">
+                                        <div class="title_overviev">
+                                            <div class="title_about">
+                                                <p>Overview</p>
+                                                <p><span class=""></span>Tour to Louvre</p>
+                                                <p></p>
+                                                <p></p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
                     </div>
                 </div>
-                <div class="map"></div>
+                <div class="panoram_image"></div>
+                <div class="container">
+                    <h2 class="contacts_section" id="contacts">Contacts</h2>
+                    <div class="contacts_info">
+                        <div class="map_description">
+                            <p class="contacts_title">Palais Royal Musee du Louvre</p>
+                            <p class="info">address: 75001 Paris, France</p>
+                            <p class="info">phone:<a href="tel:+33(0) 1 40 20 50 50"> +33(0) 1 40 20 50 50</a></p>
+                            <p class="info">mail: <a href="mailto:info@louvre.fr">info@louvre.fr</a></p>
+                        </div>
+                        <div class="map_"></div>
+                    </div>
+                </div>
+                
             </section>
     </main>
 </body>
+<script src="app.js"></script>
 </html>

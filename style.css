@@ -151,6 +151,7 @@ h1 {
 }
 .welcome_button:hover {
     background: #9D8665;
+    color: #000000;
     transition: .3s;
 
 }
@@ -310,7 +311,9 @@ h1 {
     letter-spacing: 5px;
     text-transform: uppercase;
     padding: 25px 0 10px 0;
+   
 }
+
 p a {
     text-decoration: none;
     color: #000000;
@@ -319,8 +322,9 @@ p a {
 .line {
     border-top: 2px solid #710707;
     width: 300px;
-
+    
 }
+
 .tour_description_method {
     font-family: 'Roboto';
     font-weight: 200;
@@ -342,6 +346,20 @@ p a {
 }
 .tour_info {
     padding-bottom: 75px;
+    cursor: pointer;
+   
+   
+}
+ .tour_info .line {
+    transition: 2s;
+    transition-timing-function: ease;
+}
+
+.tour_info .line:hover {
+    width: 100%;
+    
+    
+  
 }
 /*Start section Picture Explore*/
 .explore {
@@ -963,6 +981,7 @@ padding-right: 240px;
     text-align: center;
     padding: 0;
     cursor: pointer;
+
     
 }
 .button_item_1 {
@@ -1004,5 +1023,295 @@ margin-left: 14px;
     background: #9D8665;
     color: #000000;
     transition: all .3s;
+}
+.panoram_image {
+    background-image: url(assets/img/parallax\ 1.png);
+    background-repeat: no-repeat;
+    width: 1920px;
+    height: 400px;
+    margin: 75px 0 75px 0;
+}
+.contacts_section {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #9D8665;
+    padding-bottom: 25px;
+}
+.contacts_info {
+    display: flex;
+    justify-content: space-between;
+    border-top: 3px solid #710707;
+    padding-top: 75px;
+}
+.map_ {
+    background-image: url(assets/img/map.png);
+    background-repeat: no-repeat;
+    width: 960px;
+    height: 620px;
+}
+.contacts_title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+    width: 227px;
+    padding-bottom: 50px;
+}
+.info {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+   color: #000000;
+   padding-bottom: 25px;
+}
+/*Start booking tickets*/
+.form_wrapper {
+    width: 970px;
+    margin: 0 auto;
+    
+}
+.wrapper_description {
+    display: flex;
+    justify-content: space-between;
+}
+.booking {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: #9D8665; 
+    margin-block-start: -4px;
+   
+}
+.logo_booking {
+    background-image: url(assets/svg/logo_booking.svg);
+    background-repeat: no-repeat;
+    width: 85px;
+    height: 41px;
+}
+.subtitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #710707;
+    margin-bottom: 10px;
+}
 
+ .form_item {
+     width: 400px;
+ }  
+   
+
+.form {
+    display: flex;
+    flex-direction: column;
+    border-top: 3px solid #740C11;
+    padding-top: 60px;
+    position: sticky;
+}
+
+input[type="date"], input[type="time"] {
+    margin: 0;
+    width: 190px;
+    height: 45px;
+    border: 1px solid;
+    cursor: pointer;
+    
+    
+}
+.form_datetime {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    appearance: none;
+   
+}
+.form_datetime_input {
+    height: 45px;
+}
+
+.name_input, .email_input, .tel_input, select {
+    background-repeat: no-repeat;
+    background-position: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    border: 1px solid;
+    margin-bottom: 20px;
+    height: 45px;
+    
+}
+
+.name_input {
+    background-image: url(assets/svg/Name_group.svg);
+}
+.email_input {
+    background-image: url(assets/svg/email_group.svg);
+}
+
+.tel_input {
+    background-image: url(assets/svg/tel_group.svg);
+}
+
+.name_input:hover {
+    background-image: none;
+    transition: all .3s;
+    border-radius:5px;
+    border: 1px solid ;
+}
+.email_input:hover {
+    background-image: none;
+    transition: all .3s;
+    border-radius:5px;
+    border: 1px solid;
+}
+.tel_input:hover {
+    background-image: none;
+    transition: all .3s;
+    border-radius:5px;
+    border: 1px solid;
+}
+.select {
+    background-image: url(assets/svg/arrow_select.svg);
+    background-repeat: no-repeat, repeat;
+    background-position: right 15px top 50%, 0 0;
+    background-size: 17px auto, 100%; 
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    margin-bottom: 0px;
+     
+
+
+}
+.select:hover {
+    transition: all .3s;
+    border-radius:5px;
+    border: 1px solid;
+}
+.select_background {
+    display: block;
+    background-image: url(assets/svg/ballot_select.svg);
+    background-repeat: no-repeat;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 335px;
+    left: 15px;
+    z-index: 1;
+
+}
+.select_text {
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+    color: #030303;
+    position: absolute;
+    top: 333px;
+    left: 45px;
+    z-index: 1;
+    cursor: pointer;
+}
+.entry_container {
+    border: 1px solid;
+    height: 135px;
+    margin-top: 20px;
+}
+.title_entry {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #9D8665;
+    padding: 10px 0 5px 0;
+    margin: 0 auto;
+    width: 370px;
+    border-bottom: 2px solid #740C11;
+    
+}
+.wrapper_entry {
+    width: 370px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.description_entry {
+    margin-top: 18px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #030303;
+}
+.basic_1 {
+    margin-bottom: 22px;
+}
+.buttons-entry {
+    margin-top: 15px;
+}
+.buttons_entry_form {
+    
+    width: 105px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    height: 25px;
+    border: 1px solid #030303;
+   
+
+}
+.button_entry_1, .button_entry_2 {
+    background: #000000;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    color: #FFFFFF;
+    width: 125px;
+    font-size: 19px;
+    
+}
+.entry_button {
+    all: unset;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    padding-left: 12px;
+	text-align: bottom;
+	display: block;
+    width: 100%;
+    
+}
+.overviev {
+    width: 530px;
+    border: 1px solid #000000;
+}
+.overviev_container {
+    margin: 0 auto;
+    width: 470px;
+}
+.title_overviev {
+    display: flex;
 }
